@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+    <title>Peasca Ameworlor | Frontend Developer </title>
+    <script src = "script.js" defer></script>
+</head>
+<body>
+    <header class = "site-header" >
+        <a href="#" class="logo">Peasca<span>.</span></a>
+        <nav id = "site-nav">
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button type="button" id = "theme-button" class="header-button">Dark mode</button>
+        <button id = "menu-button"class= "header-button menu-button">menu</button>
+    </header>
+
+    <main>
+        <section class="hero">
+
+    <div class="hero-text">
+
+        <p class="eyebrow"> <span id = "greeting"> Hello, I'm </span></p>
+
+        <h1>Peasca Ameworlor</h1>
+
+        <p class="lead">
+            A Frontend Developer in Kumasi. I design and build websites
+            that are clear, fast and easy to use.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn">See my work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a href="#services" class="btn button">Our Services</a>
+        </div>
+
+    </div>
+
+    <img src="./Image/avatar.jpg"
+         alt="Illustration of Peasca"
+         class="hero-photo">
+
+</section>
+        <section id="about" class="about">
+            <h2>About me</h2>
+            <p>I started learning web development at the Codolla Skills Lab bootcamp. I enjoy turning ideas into websites that small businesses can be proud of.</p>
+            <ul class="skills">
+                <li>Figma</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My projects</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="Image/shop.png" alt="Screenshot of a shop app">
+                    <h3>Market Shop App</h3>
+                    <p>A product list with a cart and live totals.</p>
+                </article>
+
+                <article class="card">
+                    <img src="Image/Cafe.png" alt="Screenshot of a cafe website">
+                    <h3>Cafe Website</h3>
+                    <p>A one-page website for a local cafe.</p>
+                    
+                </article>
+                <article class="card">
+                    <img src="Image/study.png" alt="Screenshot of a blog">
+                    <h3>Study Blog</h3>
+                    <p>Notes from my coding journey.</p>
+            
+                </article>
+            </div>
+
+        </section>
+
+        <section id="services" class="services">
+            <h2> Services</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>website development</h3>
+                    <p>Build to meet your need.</p>
+                </article>
+
+                 <article class="card">
+                    <h3>Database Design</h3>
+                    <p>We make it clean and running.</p>
+                </article>
+
+                 <article class="card">
+                    <h3>Graphic Design</h3>
+                    <p>Creative designs attract potential customers.</p>
+                </article>
+            </section>
+
+        <section id="contact" class="contact">
+            <h2> Let's work together</h2>
+            <form class="contact-form" novalidate>
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" required>
+                <p class="error" id = "name-error"></p>
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" required>
+                <p class="error" id = "email-error"></p>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <p class="error" id = "message-error"></p>
+                <button type="submit" class="btn">Send Message</button>
+                <p class="thanks" id = "thanks" hidden></p>
+            
+            </form>
+        </section>
+
+                
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year">2026</span> Peasca Ameworlor. Built at JSaves Skills Lab.</p>
+    </footer>
+
+</body>
+</html>
